@@ -280,6 +280,37 @@
   display: block;
 }
 
+.to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  width: 65px;
+  height: 55px;
+  background: #55c57a; /* MorishCart Green */
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  &:hover {
+    background: #28b485;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+  }
+}
+
 .promo-card {
   border-radius: 20px;
   position: relative;

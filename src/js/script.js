@@ -93,5 +93,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Back to Top Button Logic
+const toTopBtn = document.getElementById('toTopBtn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 350) {
+    toTopBtn.classList.add('show');
+  } else {
+    toTopBtn.classList.remove('show');
+  }
+});
+
+// Smooth Scroll to Top
+toTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
 // Update the current year
 document.getElementById('current-year').textContent = new Date().getFullYear();
