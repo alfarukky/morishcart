@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Exo:300,500,800|Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bg-light py-1 border-bottom shadow-sm">
+        <div class="container m-auto d-flex justify-content-between">
+          <span>Super Value Deals - Save more with coupons</span>
+          <button class="btn btn-sm btn-secondary btn-animate">
+            Quick Actions
+          </button>
+        </div>
+      </div>
+
+      <!-- nav -->
+      <nav
+        class="navbar navbar-expand-md border-top mb-5 d-none d-md-block shadow-sm"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav align-items-center">
+              <li
+                class="nav-item bg-primary text-white rounded-3 me-3 px-2 py-1"
+              >
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-grid"></i> All Categories</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Groceries</a></li>
+                  <li><a class="dropdown-item" href="#">Household</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-section py-5 bg-light">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <!-- Left Side: Info -->
+            <div class="col-md-5">
+              <h5 class="text-secondary fw-semibold">
+                Need help or have a question?
+              </h5>
+              <h2 class="fw-bold text-dark mb-3 text-heading">
+                Don't Hesitate to <br />Contact
+                <span class="text-success">MorishCart</span>
+              </h2>
+              <p class="text-muted mb-4">
+                Our support team is always ready to assist you with your orders,
+                returns, or general inquiries. We typically respond within 24
+                hours.
+              </p>
+
+              <ul class="list-unstyled text-muted">
+                <li class="mb-2">
+                  <i class="fa-solid fa-envelope text-success me-2"></i>
+                  info@morishcart.com
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone text-success me-2"></i> +234 809
+                  456 1234
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="col-md-7">
+              <div id="flashMessage" class="flashMessage"></div>
+              <form id="contactForm" class="p-4 bg-white shadow-sm rounded-4">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label fw-semibold"
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your full name"
+                    />
+                    <small id="nameError" class="error text-danger"></small>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label fw-semibold"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="you@example.com"
+                    />
+                    <small id="emailError" class="error text-danger"></small>
+                  </div>
+                  <div class="col-12">
+                    <label for="subject" class="form-label fw-semibold"
+                      >Subject</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="e.g., Order issue, Product inquiry"
+                    />
+                    <small id="subjectError" class="error text-danger"></small>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label fw-semibold"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      rows="5"
+                      class="form-control"
+                      placeholder="Write your message here..."
+                    ></textarea>
+                    <small id="messageError" class="error text-danger"></small>
+                  </div>
+                  <div class="col-12 text-end">
+                    <button
+                      type="submit"
+                      id="submit"
+                      value="Submit"
+                      class="btn btn-success btn-lg btn-animate mt-3 px-5"
+                    >
+                      <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-success text-light pt-5 pb-3 mt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Brand / About -->
+          <div class="col-md-4">
+            <h5 class="fw-bold text-warning mb-3">MorishCart</h5>
+            <p class="small text-light">
+              Your trusted online store for groceries, home essentials, and
+              daily needs. Shop smart, save more, and enjoy fast delivery right
+              to your doorstep.
+            </p>
+            <a
+              href="https://www.amazon.com"
+              target="_blank"
+              class="btn btn-outline-warning btn-sm mt-2 px-4"
+              >Shop on Amazon <i class="fa-solid fa-arrow-right ms-2"></i
+            ></a>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4">
+            <h6 class="text-uppercase fw-semibold text-warning mb-3">
+              Quick Links
+            </h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./index.html"
+                  class="footer-link text-light text-decoration-none d-block py-1"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="footer-link text-light text-decoration-none d-block py-1"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="footer-link text-light text-decoration-none d-block py-1"
+                  >Shop</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Connect / Socials -->
+          <div class="col-md-4">
+            <h6 class="text-uppercase fw-semibold text-warning mb-3">
+              Connect With Us
+            </h6>
+            <div class="d-flex gap-3">
+              <a href="#" target="_blank" class="text-light fs-5"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" target="_blank" class="text-light fs-5"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" target="_blank" class="text-light fs-5"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+              <a href="#" target="_blank" class="text-light fs-5"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="text-center small">
+          <p class="mb-0 text-light">
+            © <span id="current-year"></span> MorishCart. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

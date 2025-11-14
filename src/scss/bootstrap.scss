@@ -1,0 +1,25 @@
+$font-family-sans-serif: 'Exo', sans-serif;
+// Brand Colors
+$primary: #55c57a; // Your primary green
+$secondary: #2998ff;
+// $primary-light: #7ed56f;
+$success: #28b485;
+$info: #ffb900;
+$light: #f7f7f7;
+
+// Accent / CTA Colors
+$secondary-dark: #5643fa;
+
+// Support Colors (You can decide use case)
+$info-dark: #ff7730;
+
+// Greys & Utilities
+$gray-100: #eee;
+$gray-600: #777;
+$gray-700: #999;
+$gray-900: #333;
+
+$white: #fff;
+$black: #000;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
