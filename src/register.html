@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Signup – MorishCart</title>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+  </head>
+  <body>
+    <section class="register-section bg-light">
+      <div class="container py-5">
+        <div class="row justify-content-center align-items-center">
+          <!-- Illustration -->
+          <div class="col-md-6 text-center mb-4" data-aos="fade-right">
+            <img
+              src="images/admin.svg"
+              alt="Admin Panel Illustration"
+              class="img-fluid"
+              style="max-width: 450px"
+            />
+          </div>
+
+          <!-- Signup Form -->
+
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="p-5 bg-white rounded-4 shadow-sm">
+              <h2 class="fw-bold text-dark mb-2 text-heading">
+                Create Admin Account
+              </h2>
+              <p class="text-muted mb-4">
+                Register to access the MorishCart admin dashboard.
+              </p>
+
+              <form id="adminRegisterForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control p-3"
+                      id="firstName"
+                      placeholder="First name"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control p-3"
+                      id="lastName"
+                      placeholder="Last name"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <input
+                      type="email"
+                      class="form-control p-3"
+                      id="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      class="form-control p-3"
+                      id="adminCode"
+                      placeholder="Admin Access Code"
+                      required
+                    />
+                    <small class="text-muted"
+                      >* Provided by system supervisor</small
+                    >
+                  </div>
+
+                  <div class="col-12">
+                    <input
+                      type="password"
+                      class="form-control p-3"
+                      id="password"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <input
+                      type="password"
+                      class="form-control p-3"
+                      id="confirmPassword"
+                      placeholder="Confirm password"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-success w-100 py-3 fw-semibold btn-animate"
+                    >
+                      Register as Admin
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <p class="text-center mt-4 text-muted">
+                Already an admin?
+                <a href="admin-login.html" class="text-success fw-semibold"
+                  >Sign in</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({ duration: 900, easing: 'ease-out-cubic', once: true });
+    </script>
+  </body>
+</html>
