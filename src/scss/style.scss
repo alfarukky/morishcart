@@ -32,6 +32,16 @@
   transform: scale(1.05);
 }
 
+.btn-animate-1 {
+  transition: all 0.25s ease;
+  transform: translateY(0);
+}
+
+.btn-animate-1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
 .line {
   width: 80px;
   height: 2px;
@@ -254,7 +264,8 @@
   }
 }
 .contact-section,
-.register-section {
+.register-section,
+.login-section {
   & .form-control {
     border-radius: 10px;
     box-shadow: none;

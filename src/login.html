@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Signup – MorishCart</title>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+  </head>
+  <body>
+    <section class="login-section">
+      <div class="container py-5">
+        <div class="row justify-content-center align-items-center">
+          <!-- Illustration -->
+          <div class="col-md-6 text-center mb-4" data-aos="fade-right">
+            <img
+              src="images/admin.svg"
+              alt="Admin Panel Illustration"
+              class="img-fluid"
+              style="max-width: 450px"
+            />
+          </div>
+          <!-- Login Form -->
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="p-5 bg-white rounded-4 shadow-sm">
+              <h2 class="fw-bold text-dark mb-2 text-heading">
+                Sign in to Admin Panel
+              </h2>
+              <p class="text-muted mb-4">
+                Welcome back Admin! Enter your credentials to continue.
+              </p>
+
+              <form id="adminLoginForm">
+                <div class="row g-3">
+                  <div class="col-12">
+                    <input
+                      type="email"
+                      class="form-control p-3"
+                      id="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="password"
+                      class="form-control p-3"
+                      id="password"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="rememberMe"
+                        class="form-check-input me-1"
+                      />
+                      <label for="rememberMe" class="form-check-label"
+                        >Remember me</label
+                      >
+                    </div>
+
+                    <a href="#" class="text-success fw-semibold"
+                      >Forgot password?</a
+                    >
+                  </div>
+
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-success w-100 py-3 fw-semibold btn-animate-1"
+                    >
+                      Sign In as Admin
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <p class="text-center mt-4 text-muted">
+                Don't have an account?
+                <a href="./register.html" class="text-success fw-semibold"
+                  >Sign Up</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({ duration: 900, easing: 'ease-out-cubic', once: true });
+    </script>
+  </body>
+</html>
